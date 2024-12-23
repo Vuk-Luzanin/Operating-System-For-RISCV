@@ -49,8 +49,8 @@ Implementation of this kernel is layered into multiple levels of abstraction:
 | 0x24             |  <p><pre> int sem_signal (sem_t id);  </pre></p>| Operation signal on semaphore with given handle. If successful returns 0, otherwise returns negative value |
 | 0x25             |  <p><pre> int sem_timedwait (sem_t id, time_t timeout);  </pre></p>| The wait operation on a semaphore with a given handle, where the waiting time lasts up to a maximum of timeout time units (timer period). In case of success, it returns 0; if the semaphore was deallocated while the calling thread was waiting, it returns SEMDEAD == -1; and if the maximum waiting time has elapsed, it returns TIMEOUT == -2.|
 | 0x26             |  <p><pre> int sem_trywait (sem_t id);  </pre></p>| The wait operation on a semaphore with a given handle, where no waiting is performed. If the semaphore is locked, it returns 0; if the semaphore is not locked, it returns 1; and in case of failure, it returns a negative value (on error). |
-| 0x31             |  <p><pre> int time_sleep (time_t time);  </pre></p>| Puts currently running thread to sleep for _time_t_ periods of timer ticks (timer ticks every 100ms). Returns 0 if successful, negative value otherwise |
-| 0x41             |  <p><pre> char getc ();  </pre></p>| Returns one character from input buffer. If buffer is empty, blocks caller thread until there is a character. If successful returns character, otherwise return const EOF|
+| 0x31             |  <p><pre> int time_sleep (time_t time);  </pre></p>| Puts currently running thread to sleep for _time_t_ periods of timer ticks (timer ticks every 100ms). Returns 0 if successful, negative value otherwise. |
+| 0x41             |  <p><pre> char getc ();  </pre></p>| Returns one character from input buffer. If buffer is empty, blocks caller thread until there is a character. If successful returns character, otherwise return const EOF.|
 | 0x42             |  <p><pre> void putc (char);  </pre></p>| Prints given character to console|
 
 <br/>
