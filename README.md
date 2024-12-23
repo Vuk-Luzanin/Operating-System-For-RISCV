@@ -134,7 +134,7 @@ make qemu
 </pre>
 
 System already comes with a user program that is used to test the system. This program can be found in /tests/userMain.hpp. Program is called from /src/system.cpp.  
-To run your own program you can either change the code in /tests/userMain.cpp or write code directly in wrapper function in /src/system.cpp (not recommended).
+To run your own program you can either change the code in /test/userMain.cpp or write code directly in wrapper function in /src/system.cpp (not recommended).
 
 ### Running the system on a Debian based Linux distribution
 First of all this is not a thouroughly tested method so there is a possibility that system will not compile or that system execution will show unexpected behaviour.  
