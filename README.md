@@ -148,4 +148,5 @@ make all
 make qemu
 </pre>
 
+
 ![Timer](https://github.com/Vuk-Luzani/Operating-System-For-RISCV/blob/main/img/os.gif?raw=true)
