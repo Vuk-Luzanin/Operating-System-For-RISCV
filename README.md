@@ -149,5 +149,5 @@ make qemu
 </pre>
 
 
-![Loading](https://github.com/Vuk-Luzani/Operating-System-For-RISCV/img/os.gif?raw=true)
+![Loading](https://github.com/Vuk-Luzanin/Operating-System-For-RISCV/blob/main/img/os.gif)
 
