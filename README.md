@@ -148,6 +148,8 @@ make all
 make qemu
 </pre>
 
+One useful link: <pre>https://pdos.csail.mit.edu/6.1810/2024/tools.html</pre>
+
 
 ![Loading](https://github.com/Vuk-Luzanin/Operating-System-For-RISCV/blob/main/img/os.gif)
 
